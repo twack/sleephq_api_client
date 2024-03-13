@@ -21,13 +21,96 @@ This project contains a Python client for interacting with the SleepHQ API.
 
 ## Setup
 
-1. Clone the repository.
-2. Set up the virtual environment by running `source venv/bin/activate`.
-3. Install the required packages by running `pip install -r requirements.txt`.
-4. Run the main script by running `python sleephq_api_client/main.py`.
+Follow these steps to set up the project on your local machine:
+
+### Windows
+
+1. Open Command Prompt.
+2. Navigate to the location where you want to create the project folder:
+    ```cmd
+    cd <folder_path>
+    ```
+3. Create a new folder:
+    ```cmd
+    mkdir sleephq_api_client
+    ```
+4. Navigate into the new folder:
+    ```cmd
+    cd sleephq_api_client
+    ```
+5. Clone the GitHub repository:
+    ```cmd
+    git clone https://github.com/twack/sleephq_api_client.git
+    ```
+6. Set up the virtual environment:
+    - Install the virtual environment package if not already installed:
+        ```cmd
+        pip install virtualenv
+        ```
+    - Create a new virtual environment:
+        ```cmd
+        virtualenv venv
+        ```
+    - Activate the virtual environment:
+        ```cmd
+        venv\Scripts\activate
+        ```
+7. Install the required packages:
+    ```cmd
+    pip install -r requirements.txt
+    ```
+8. Run the main script:
+    ```cmd
+    python sleephq_api_client/main.py
+    ```
+
+### Unix/MacOS
+
+1. Open Terminal.
+2. Navigate to the location where you want to create the project folder:
+    ```bash
+    cd <folder_path>
+    ```
+3. Create a new folder:
+    ```bash
+    mkdir sleephq_api_client
+    ```
+4. Navigate into the new folder:
+    ```bash
+    cd sleephq_api_client
+    ```
+5. Clone the GitHub repository:
+    ```bash
+    git clone <github_repo_url>
+    ```
+6. Set up the virtual environment:
+    - Install the virtual environment package if not already installed:
+        ```bash
+        pip install virtualenv
+        ```
+    - Create a new virtual environment:
+        ```bash
+        virtualenv venv
+        ```
+    - Activate the virtual environment:
+        ```bash
+        source venv/bin/activate
+        ```
+7. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+8. Navigate to the app directory and run the main script:
+    ```bash
+    cd sleephq_api_client
+    python sleephq_api_client/main.py
+    ```
+
+Replace `<folder_path>` with the path to the location where you want to create the project folder.
 
 ## Testing
 
+No test included by me yet. Needs cleanup.
 To run the tests, use the `test` command from the `setuptools` package.
 
 ## Contributing
