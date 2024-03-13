@@ -4,8 +4,7 @@ This project contains a Python client for interacting with the SleepHQ API. It m
 in the `file_stores` directory. Anytime a new file shows up, it will trigger an upload automatically.
 
 It is only working for Viatom Ring files right now. All the same naming conventions that SleepHQ has for these
-files are upheld. Once the file is uploaded to your SleepHQ account, it is put in a file called `inventory.json`
-that keeps track of uploaded files.
+files are upheld. When the application runs and the file(s) is/are imported to your SleepHQ account, it/they should show up in your "Data Imports" page on the SleepHQ website. If the import/upload is successful, the name of the file as added to a file called `inventory.json`.
 
 In the `constants.py` file there is a `CHECK_FREQ` veriable where you can set how many seconds the application
 checks the  `file_stores` directory for new files. Set this value with some caution with consideration of the 
