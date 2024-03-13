@@ -7,7 +7,7 @@ This project contains a Python client for interacting with the SleepHQ API.
 - `sleephq_api_client/`: Main source code directory.
     - `__init__.py`: Initializes the Python package.
     - `constants.py`: Contains constant values used across the project.
-    - `file_stores/`: Contains modules for handling file storage.
+    - `file_stores/`: Contains folders for file storage and `inventory.json` files.
         - `resmed/`: Module for ResMed file storage.
         - `viatom/`: Module for Viatom file storage.
         - `withings/`: Module for Withings file storage.
@@ -17,7 +17,7 @@ This project contains a Python client for interacting with the SleepHQ API.
         - `logger_conf.py`: Sets up the application logger.
         - `new_file_trigger.py`: Handles triggering of new file events.
     - `main.py`: Entry point of the application.
-- `tests/`: Contains unit tests for the project.
+- `tests/`: Contains unit tests for the project. Not updated yet. Needs cleanup
 
 ## Setup
 
