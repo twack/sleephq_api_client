@@ -1,6 +1,15 @@
 # SleepHQ API Client
 
-This project contains a Python client for interacting with the SleepHQ API.
+This project contains a Python client for interacting with the SleepHQ API. It monitors the subfolders
+in the `file_stores` directory. Anytime a new file shows up, it will trigger an upload automatically.
+
+It is only working for Viatom Ring files right now. All the same naming conventions that SleepHQ has for these
+files are upheld. Once the file is uploaded to your SleepHQ account, it is put in a file called `inventory.json`
+that keeps track of uploaded files.
+
+In the `constants.py` file there is a `CHECK_FREQ` veriable where you can set how many seconds the application
+checks the  `file_stores` directory for new files. Set this value with some caution with consideration of the 
+computer you are running on. The checker is on a seperate thread to try and minimize processor resources.
 
 ## Project Structure
 
