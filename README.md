@@ -31,8 +31,6 @@ computer you are running on. The checker is on a seperate thread to try and mini
 
 Follow these steps to set up the project on your local machine:
 
-### Windows
-
 1. Open Command Prompt.
 2. Navigate to the location where you want to create the project folder:
     ```cmd
