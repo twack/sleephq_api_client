@@ -35,13 +35,13 @@ def has_credentials(silent=None):
     if not silent:
         logger.warning(f"[{inspect.currentframe().f_code.co_name}] >> Checking for SleepHQ user credentials...")
         
-    CLIENT_UID = os.getenv('CLIENT_UID')
-    CLIENT_SECRET = os.getenv('CLIENT_SECRET')
+    CLIENT_UID = os.getenv('SLEEPHQ_CLIENT_UID')
+    CLIENT_SECRET = os.getenv('SLEEPHQ_CLIENT_SECRET')
 
     if not CLIENT_UID or not CLIENT_SECRET:
         try:
-            CLIENT_UID = constants.CLIENT_UID
-            CLIENT_SECRET = constants.CLIENT_SECRET
+            CLIENT_UID = constants.SLEEPHQ_CLIENT_UID
+            CLIENT_SECRET = constants.SLEEPHQ_CLIENT_SECRET
         except AttributeError:
             return False
 

@@ -3,13 +3,13 @@
 
 # * Typically you would set keys and secrets in environment variables to avoid hardcoding them in the code
 # * But you can define them here if they are not in the environment variables
-# CLIENT_UID = "put your client uid here"
-# CLIENT_SECRET = "put your client secret here"
+# SLEEPHQ_CLIENT_UID = "put your client uid here"
+# SLEEPHQ_CLIENT_SECRET = "put your client secret here"
 
 # * You can define the team id here if you have multiple teams
 # * You can also set the team id in the environment variables
 # * If not in either place, the application will get the team
-# TEAM_ID = 'put your team id here'
+# SLEEPHQ_TEAM_ID = 'put your team id here'
 
 BASE_URL = "https://sleephq.com"
 API_VERSION = '/api/v1'

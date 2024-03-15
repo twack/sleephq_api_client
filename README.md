@@ -77,6 +77,22 @@ Follow these steps to set up the project on your local machine:
 
 Replace `<folder_path>` with the path to the location where you want to create the project folder.
 
+## Constants
+
+The `constants.py` file is used for settings certain variables used throughout the application.
+### These can be set here, or as environment variables of the same name. 
+`SLEEPHQ_CLIENT_UID=<your client ID>`
+
+`SLEEPHQ_CLIENT_SECRET=<your client Secret>`
+
+`SLEEPHQ_TEAM_ID=<your team id>` if you leave this blank it will use your default team id. This is mainly for if you belong to multiple teams.
+
+### These must be set in the `constants.py` file
+
+`CHECK_FREQ=5` variable where you can set how many seconds the application check for new files.
+
+`FILE_STORE=./file_stores/` directory for storing and checking for new files.
+
 ## Testing
 
 No test included by me yet. Needs cleanup.

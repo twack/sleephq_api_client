@@ -107,11 +107,11 @@ class API:
         logger.info(f"[{inspect.currentframe().f_code.co_name}] >> Finding Team ID to use...")
         try:
             if constants.TEAM_ID:
-                team_id = constants.TEAM_ID
+                team_id = constants.SLEEPHQ_TEAM_ID
                 logger.info(f"[{inspect.currentframe().f_code.co_name}] >> Using team ID from constants.py: {team_id}")
         except AttributeError:
             try:
-                team_id = os.environ['TEAM_ID']
+                team_id = os.environ['SLEEPHQ_TEAM_ID']
                 logger.info(f"[{inspect.currentframe().f_code.co_name}] >> Using team ID from environment variable: {team_id}")
             except KeyError:
                 # If not set in constants.py or environment variable, make the API request
