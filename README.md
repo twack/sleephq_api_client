@@ -93,6 +93,10 @@ The `constants.py` file is used for settings certain variables used throughout t
 
 `FILE_STORE=./file_stores/` directory for storing and checking for new files.
 
+`MINIMUM_RING_FILE_SIZE=500` # minimum file size in bytes for a ring file to be considered for upload to SleepHQ
+
+`FILE_SETTLE_TIME=10` # number of seconds to wait before considering a file as complete
+
 ## Testing
 
 No test included by me yet. Needs cleanup.

@@ -15,5 +15,9 @@ BASE_URL = "https://sleephq.com"
 API_VERSION = '/api/v1'
 
 FILE_STORE = "./file_stores/" # relative path to the file store directory
+
+# Set small and fast for my testing
 CHECK_FREQ = 5 # number of seconds to wait before checking for new files
+MINIMUM_RING_FILE_SIZE=500 # minimum file size in bytes for a ring file to be considered for upload to SleepHQ
+FILE_SETTLE_TIME=10 # number of seconds to wait before considering a file as complete
 
